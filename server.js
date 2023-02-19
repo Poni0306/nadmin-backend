@@ -5,9 +5,10 @@ const bodyParser = require('body-parser')
 const app = express()
 const port = 3000
 const routerDatabase = require("./routers/database.js")
-const cors = require('cors')
+//const cors = require('cors')
 
-app.use(cors())
+//app.use(cors())
+const cors = require('cors')({origin: true});
 
 app.use(bodyParser.json());
 // Express modules / packages
